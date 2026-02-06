@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #ff4500, #ff6347, #ffa500, #ffff00);
+}
+
+header {
+  text-align: center;
+  padding: 30px 0; 
+}
+
+header span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  background: white;
+  padding: 10px 25px;
+  border-radius: 50px; /* Makes it a bubble button */
+  margin: 0 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gif-container {
+  width: 300px;
+  height: 400px;
+  overflow: scroll;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  padding: 10px;
+  margin-left: auto;
+}
+
+.gif-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.h1, h2 {
+  text-align: center;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px;
+  border-radius: 40px;
+  flex: 1;
+  max-width: 300px;
+}
+
+aside {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px;
+  border-radius: 40px;
+  flex: 1;
+  max-width: 300px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 40px; 
+  margin-top: 0;
+}
+footer {
+  text-align: center; /* Centers the text */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1); /* Optional: makes it look like a separate bar */
+  width: 100%;
+}
