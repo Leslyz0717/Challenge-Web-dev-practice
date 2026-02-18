@@ -1,91 +1,284 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: sans-serif;
-  background: linear-gradient(135deg, #ff4500, #ff6347, #ffa500, #ffff00);
+  font-family: Georgia, 'Times New Roman', serif;
+  background: linear-gradient(145deg, #3e5c4b, 0%, #6a8e7a 100%);
+  color:#1e2b26;
+  line-height: 1.5;
 }
 
 header {
   text-align: center;
-  padding: 30px 0; 
+  padding: 2rem 1rem 1rem; 
 }
 
 header span {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color:#1c4b43;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav {
-  margin-top: 20px;
+  margin-top: 1.5rem 0 0.5rem;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
-  background: white;
-  padding: 10px 25px;
-  border-radius: 50px; /* Makes it a bubble button */
-  margin: 0 10px;
-  font-weight: bold;
+  color: #1e2b26;
+  background: #f5f0e1;
+  padding: 0.6rem 1.5rem;
+  border-radius: 40px; /* Makes it a bubble button */
+  margin: 0 0.4rem;
+  font-weight: 500;
   display: inline-block;
+  border:1px solid #8b6e4b;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #d9c5a6;
 }
 
 main {
   display: flex;
   flex-direction: row;
+  flex-wrap:wrap;
   flex: 1;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
+  align-items: stretch;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+section, aside {
+  background: rgba(255, 250, 240, 0.85);
+  padding: 1.8rem;
+  border-radius: 30px;
+  flex: 1 1 300px; /* Allows it to grow and shrink, but not smaller than 300px */
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+}
+
+#introduction, #key-questions {
+  flex: 1.2 1 300px;
+}
+
+#data-preview{
+  flex: 0.8 1 280px;
+  max-width: 480px;
+}
+
+h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color:#3d2f1f;
+  border-bottom: 2px solid #8b6e4b;
+  padding-bottom: 0.05rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem 0 0.8rem;
+  color:#3d2f1f;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.5rem;
+  color:#4e3e2b;
+}
+
+p, li {
+  margin-bottom: 0.8rem;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #8b6e4b;
+  margin: 1.5rem 0;
+  opacity: 0.6;
 }
 
 .gif-container {
-  width: 300px;
-  height: 400px;
-  overflow: scroll;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 40px;
-  padding: 10px;
-  margin-left: auto;
+  width: 100%;
+  height: 200px;
+  overflow: auto;
+  background-color: #e0d5c0;
+  border-radius: 20px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid #a28b64;
 }
 
 .gif-container img {
   width: 100%;
   height: auto;
   display: block;
-}
-.h1, h2 {
-  text-align: center;
+  border-radius: 12px
 }
 
-section {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 25px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: #f9f4e9;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+th{
+  background-color: #5d7b6a;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem;
+  text-align: left;
+  word-break: break-word;
+}
+
+td {
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid #ccc9c0;
+  word-break: break-word; 
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:nth-child(even) {
+  background-color: #ede7db;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap:0.8rem;
+  margin-top: 1rem;
+}
+
+label {
+  font-weight: 600;
+  color:#2b4b3b;
+}
+
+input{
+  padding: 0.6rem;
+  border: 1px solid #a28b6f;
+  border-radius: 30px;
+  font-family: inherit;
+  background: #fffcf5;
+}
+
+button {
+  background: #5d7b6a;
+  color: white;
+  border: none;
+  padding: 0.8rem;
   border-radius: 40px;
-  flex: 1;
-  max-width: 300px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
-aside {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 25px;
+button:hover {
+  background: #3f5f4e;
+}
+
+.toggle-btn {
+  background: #8b6e4b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
   border-radius: 40px;
-  flex: 1;
-  max-width: 300px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1rem 0 0.5rem;
+  transition: background 0.2s;
 }
 
-img {
-  width: 300px;
-  height: auto;
-  border-radius: 40px; 
-  margin-top: 0;
+.toggle-btn:hover {
+  background: #6b4f32;
 }
+
+/* Hidden quote styling (initially hidden) */
+.hidden-quote {
+  display: none;                /* hidden by default */
+  background: #e8e0d3;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 1rem;
+  font-style: italic;
+  border-left: 4px solid #8b6e4b;
+}
+
+/* When the quote is visible, we'll toggle this class with JS */
+.hidden-quote.visible {
+  display: block;
+}
+
 footer {
   text-align: center; /* Centers the text */
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.1); /* Optional: makes it look like a separate bar */
-  width: 100%;
+  padding: 1.5rem;
+  background-color: #2e4036; 
+  color: #e0dbc8;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #ffd78c;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* media queries */
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  section {
+    width: 100%;
+    max-width: 100% !important;
+    flex:auto;
+  }
+
+  aside{
+    flex: 0.5 1 280px;
+    max-width:380px;
+  }
+
+  header span {
+    font-size: 1.8rem;
+  }
+
+  nav a{
+    display: block;
+    margin: 0.5rem auto;
+    width: fit-content
+  }
 }

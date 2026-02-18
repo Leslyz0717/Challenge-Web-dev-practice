@@ -3,44 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <title>Subscribe to Our Newsletter</title> -->
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
   <header>
-  <span>Cooking on Probation! </span>
+  <span>The Jonglei Canal - A technocratic Autopsy </span>
   <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Get Started</a>
+    <a href="#">The Proposal</a>
+    <a href="#">Sources</a>
+    <a href="#">3D Model</a>
   </nav>
 </header>
 
 <main>
-  <section>
-    <h1>Welcome meal murders!</h1>
-    <p>The most dangerous room for people who think “preheat” is optional. Every year, thousands of meals die because someone decided oil and high heat should meet unsupervised. If you’ve ever set off a fire alarm making noodles, this place is for you. We’re not here to make food fancy. Instead we’re here to stop you from turning dinner into a crime scene.</p>
+  <section id="Introduction">
+    <h1>when Engineering Erases Nature: The Jonglei Canal Case Study</h1>
+    <p>In South Sudan, the Sudd wetlands one of Africa's largest floodplains, have for millennia regulated the flow of the White Nile. 
+      But to British colonial engineers like Sir William Garstin, this vast swamp was simply "inefficient." 
+      His 1904 plan to carve a canal through the Sudd aimed to redirect water to Egypt, bypassing what he saw as wasted evaporation.
+      The Jonglei Canal, as it came to be known, was a colossal undertaking, stretching over 360 kilometers. 
+      However, the project was plagued by technical challenges, political instability, and environmental consequences. 
+      The canal's construction disrupted the delicate ecosystem of the Sudd, leading to habitat loss for countless species and altering the region's hydrology. 
+      Moreover, the canal failed to deliver the promised water savings, as sedimentation and maintenance issues quickly arose. 
+      Today, the Jonglei Canal stands as a stark reminder of how technocratic ambitions can clash with nature's complexity, leaving behind a legacy of ecological damage and unfulfilled promises.
+    </p>
+    <p>
+      Today, as South Sudan faces catastrophic flooding and famine, the unfinished Jonglei Canal stands as a monument to technocratic arrogance. 
+      This report argues that the colonial obsession with hydraulic efficiency dismantled natural flood buffers, disrupted nomadic lifeways, and set the stage for modern humanitarian collapse.
+    </p>
+    <p>
+      By examining original documentssuch as Reports on the Basin of the Upper Nile to medical records in canal zones,
+       we can trace a direct line from Garstin's drawing board to the flooded villages of 2025.
+    </p>
   </section>
-  <aside>
-    <h2>How to stop murdering meals</h2>
-    <ul>
-      <li>Clear the area. If it can burn, melt, or cry later, move it ASAP!.</li>
-      <li>Turn the heat down. High heat is for pros and bad decisions. Start low.</li>
-      <li>Stay in the kitchen. Cooking is not background noise. Don’t abandon the pan!</li>
-      <li>Keep water nearby. For safety, not for panic-throwing across the room!</li>
-      <li>Smell check. If it smells like regret, stop ASAP</li>
-      <li>Have a fire extinguisher. Because calling 911 is not a cooking technique.</li>
-    </ul>
-  </aside>
-  <section>
+
+  <aside id="data-preview">
+      <h2>Visualizing the failure</h2>
      <div class="gif-container">
-       <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTF3bG11eXhwOHJqcGxsamk3Y3NvbHpvMHZpcmVmZ3N5NW40MWs1aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ueoUc3gJ5E6Fa/giphy.gif" alt="Cooking Disaster Gif">
+       <img src="https://i0.wp.com/dredgewire.com/wp-content/uploads/2022/10/18-5.jpg?resize=800%2C453&ssl=1" alt="Jonglei Canal Abandonment">
      </div>
+     <h3>Estimated Hydrological impact</h3>
+     <div class = "table wrapper">
+     <table>
+       <thead>
+         <tr>
+           <th>Period</th>
+           <th>Evaporation (est.)</th>
+           <th>Downstream flow (est.)</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>Pre-Canal (natural regime)</td>
+           <td>~50% of inflow</td>
+           <td>~50% of inflow</td>
+         </tr>
+         <tr>
+           <td>Garstin's Design goal</td>
+           <td>Reduced to ~20% of inflow</td>
+           <td>Increased to ~80% of inflow</td>  
+         </tr>
+         <tr>
+           <td>Current crisis (post canal start)</td>
+           <td>Flooding, unpredictable</td>
+           <td>Extreme variability</td>
+         </tr>
+       </tbody>
+     </table>
+     <button id="toggle-garstin" class="toggle-btn">Show Garstin's original words</button>
+    <div id="garstin-quote" class="hidden-quote">
+  <p><em>"The waste of water in the swamps of the Bahr el Jebel is so enormous that the question of its reduction becomes one of the first importance."</em> — Sir William Garstin, 1904.</p>
+     </div>
+    </aside>
+
+  <section id="Key-Questions">
+    <h2>Investigative Questions</h2>
+    <ul>
+      <li>How did the colonial focus on "maximum flow" ignore the Sud's role as a flood buffer?</li>
+      <li>What were the long-term environmental consequences of the canal's construction?</li>
+      <li>How did the canal disrupt traditional nomadic lifestyles and local economies?</li>
+      <li>Was water infrastructure a tool to control nomadic populations in the Upper Nile?</li>
+      <li>How did Malaria and shistosomiasis rates change after Garstin's interventions?</li>
+    </ul>
+
+    <hr>
+    <h3>Keep an Eye on the Hydrological Changes!</h3>
+     <form id="signup-form">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" placeholder="Enter your name" required>
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" placeholder="Enter your email@email.com" required>
+       <button type="submit">Get project updates</button>
+      </form>
   </section> 
 </main>
-<footer>
-  <p>Get Yo Cooking right!</p>
-</footer>
 
+<footer>
+  <p>A research initiative on colonial infrastructure & ecology</p>
+  <p>Sources: <a href="https://www.chijournal.org/C448">Development and Change</a> 
+    <a href="https://dredgewire.com/south-sudan-faces-resistance-from-communities-on-dredging-jonglei/">Report on resistance of community</a>
+    <a href="https://jia.sipa.columbia.edu/content/jonglei-canal-flawed-logic-hydro-diplomacy-nile-basin">Flawed Logic in Hydro-Diplomacy</a>
+  </p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
